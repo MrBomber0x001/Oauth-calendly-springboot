@@ -1,6 +1,6 @@
 # Calendly integration in Spring boot  [POC]
 
-This is a POC demo of integrating Calendly in Spring boot using OAuth
+This is a POC demo of integrating Calendly in Spring boot using OAuth flow
 
 For API documentation head over to: `http://localhost:8080/swagger-ui/index.html`
 
@@ -219,6 +219,13 @@ And the same goes for all other endpoints, ofcourse this can be more organized i
 But this was just a POC.
 
 
-```
+### Log
 
-```
+- [x] Added Swagger Documentation and Exception Handling
+- [x] Added OAuth flow functionality
+- [x] Added sample endpoints
+    - [x] `/me` retrieving current user information
+    - [x] `/event-types` retrieving event types
+    - [x] `/scheduling-link` create a scheduling-link link based on event-type provided (15min, 30min, etc)
+- [ ] integrate (users, bookings, etc) and integrate with webhooks for tracking schedules
+- [ ] implement other important endpoints (adding user to organization, etc)
